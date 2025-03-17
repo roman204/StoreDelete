@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="delete_store_view" xsi:type="object">CopeX\StoreDelete\Console\Command\DeleteStoreView</item>
+                <item name="delete_store_group" xsi:type="object">CopeX\StoreDelete\Console\Command\DeleteStoreGroup</item>
+                <item name="delete_website" xsi:type="object">CopeX\StoreDelete\Console\Command\DeleteWebsite</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="copex_storedelete_delete_store_view"
+                      xsi:type="object">CopeX\StoreDelete\Console\Command\DeleteStoreView
+                </item>
+                <item name="copex_storedelete_delete_store_group"
+                      xsi:type="object">CopeX\StoreDelete\Console\Command\DeleteStoreGroup
+                </item>
+                <item name="copex_storedelete_delete_website"
+                      xsi:type="object">CopeX\StoreDelete\Console\Command\DeleteWebsite
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>
