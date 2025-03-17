@@ -14,17 +14,18 @@ Extension developers can interact with the CopeX_StoreDelete module. For more in
 
 [The Magento dependency injection mechanism](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/depend-inj.html) enables you to override the functionality of the CopeX_StoreDelete module.
 
-### Layouts
+## Caution
+Delete the configurations for all elements you want to delete before deleting entity.
 
-The module introduces layout handles in the `view/adminhtml/layout` directory.
+## Usage
+Delete a website with child storeGroup and all child storeViews
+`./bin/magento store:website:delete {{websiteId}}`
 
-For more information about a layout in Magento 2, see the [Layout documentation](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-overview.html).
+Delete a storeGroup with child storeViews
+`./bin/magento store:group:delete {{storeGroupId}}`
 
-### UI components
-
-You can extend product and category updates using the UI components located in the `view/adminhtml/ui_component` directory.
-
-For information about a UI component in Magento 2, see [Overview of UI components](https://devdocs.magento.com/guides/v2.4/ui_comp_guide/bk-ui_comps.html).
+Delete a storeView
+`./bin/magento store:view:delete {{storeViewId}}`
 
 ## Additional information
 
