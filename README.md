@@ -19,12 +19,15 @@ Delete the configurations for all elements you want to delete before deleting en
 
 ## Usage
 Delete a website with child storeGroup and all child storeViews
+
 `./bin/magento store:website:delete {{websiteId}}`
 
 Delete a storeGroup with child storeViews
+
 `./bin/magento store:group:delete {{storeGroupId}}`
 
 Delete a storeView
+
 `./bin/magento store:view:delete {{storeViewId}}`
 
 ## Additional information
